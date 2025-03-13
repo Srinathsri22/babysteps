@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabySteps - Personalized Toy Boxes for Your Child</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #FAFAFA;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #1E3A5F;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 150px;
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .cta-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(90deg, #FF7F50, #FF6347);
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s ease-in-out;
+      cursor: pointer;
+      border: none;
+    }
+
+    .cta-button:hover {
+      background: linear-gradient(90deg, #FF6347, #FF4500);
+    }
+
+    .benefits-list {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .benefits-list li {
+      margin-bottom: 10px;
+    }
+
+    .launching-soon {
+      color: #FF4500;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .email-signup {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .email-input {
+      width: 80%;
+      padding: 12px;
+      border: 2px solid #FF7F50;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .email-input {
+        width: 80%;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+
+    .age-selector {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .age-selector select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #FF4500;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1>BabySteps - Personalized Toy Boxes for Your Child!</h1>
+
+  <p class="price">First Box at ₹999 – Try Before You Commit!</p>
+
+  <p><strong>Is your child losing interest in new toys after just a few days? Are you tired of constantly buying new ones?</strong></p>
+  <p><em>We have the perfect solution!</em> Introducing <strong>BabySteps</strong> – a personalized toy box delivered to your doorstep every month, filled with fun, engaging, and educational toys for your child!</p>
+
+  <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg" alt="Happy child playing with toys" class="hero-image">
+
+  <h2>What We Offer:</h2>
+  <ul class="benefits-list">
+    <li>✨ Curated toy boxes tailored for children aged 3 months to 12 years.</li>
+    <li>🧸 Fun, engaging toys, Montessori kits, and learning activities.</li>
+    <li>📚 Includes books and creative play materials to stimulate young minds.</li>
+    <li>👩‍⚕️ All products are child-safe and curated by leading pediatricians and child psychologists.</li>
+    <li>🎁 Hassle-free subscription – a new surprise every month!</li>
+  </ul>
+
+  <h2>Why Choose BabySteps?</h2>
+  <ul class="benefits-list">
+    <li>✅ Manufactured with child-safe, high-quality materials.</li>
+    <li>✅ Carefully curated toys to save your time and effort.</li>
+    <li>✅ Designed to engage, educate, and entertain your child.</li>
+    <li>✅ A meaningful gift for your child's growth and learning.</li>
+  </ul>
+
+  <div class="age-selector">
+    <label for="age">Select your child's age:</label>
+    <select id="age" name="age">
+      <option value="3">3 months</option>
+      <option value="6">6 months</option>
+      <option value="9">9 months</option>
+      <option value="12">12 months</option>
+      <option value="18">18 months</option>
+      <option value="24">2 years</option>
+      <option value="36">3 years</option>
+      <option value="48">4 years</option>
+      <option value="60">5 years</option>
+      <option value="72">6 years</option>
+      <option value="84">7 years</option>
+      <option value="96">8 years</option>
+      <option value="108">9 years</option>
+      <option value="120">10 years</option>
+      <option value="132">11 years</option>
+      <option value="144">12 years</option>
+    </select>
+  </div>
+
+  <div class="email-signup">
+    <form action="https://formsubmit.co/srinathsenthilkumar2001@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" class="email-input" required>
+      <input type="hidden" name="_subject" value="New BabySteps Signup">
+      <input type="hidden" id="ageInput" name="child_age" value="">
+      <button type="submit" class="cta-button">Get the Box at ₹999</button>
+    </form>
+  </div>
+
+  <p class="launching-soon">🚀 We're Launching Soon – Be the First to Know!</p>
+
+  <script>
+    document.getElementById('age').addEventListener('change', function() {
+      document.getElementById('ageInput').value = this.options[this.selectedIndex].text;
+    });
+  </script>
+</div>
+</body>
+
+</html>
