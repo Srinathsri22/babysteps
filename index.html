@@ -77,6 +77,16 @@
       text-align: center;
     }
 
+    .disclaimer {
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      background: #FFF3E0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
     .email-signup {
       text-align: center;
       margin-top: 30px;
@@ -121,40 +131,38 @@
     }
   </style>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16920736944"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16920736944"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'AW-16920736944');
-</script>
+    gtag('config', 'AW-16920736944');
+  </script>
 
-<!-- Event snippet for Page view conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16920736944/szUHCMzs_6kaELDpt4Q_',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16920736944/szUHCMzs_6kaELDpt4Q_',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-<script type="text/javascript">
+  </script>
+  <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "qp3onfs9rg");
-</script>
+  </script>
 
 </head>
 
@@ -178,53 +186,16 @@ function gtag_report_conversion(url) {
     <li>🎁 Hassle-free subscription – a new surprise every month!</li>
   </ul>
 
-  <h2>Why Choose BabySteps?</h2>
-  <ul class="benefits-list">
-    <li>✅ Manufactured with child-safe, high-quality materials.</li>
-    <li>✅ Carefully curated toys to save your time and effort.</li>
-    <li>✅ Designed to engage, educate, and entertain your child.</li>
-    <li>✅ A meaningful gift for your child's growth and learning.</li>
-  </ul>
-
-  <div class="age-selector">
-    <label for="age">Select your child's age:</label>
-    <select id="age" name="age">
-      <option value="3">3 months</option>
-      <option value="6">6 months</option>
-      <option value="9">9 months</option>
-      <option value="12">12 months</option>
-      <option value="18">18 months</option>
-      <option value="24">2 years</option>
-      <option value="36">3 years</option>
-      <option value="48">4 years</option>
-      <option value="60">5 years</option>
-      <option value="72">6 years</option>
-      <option value="84">7 years</option>
-      <option value="96">8 years</option>
-      <option value="108">9 years</option>
-      <option value="120">10 years</option>
-      <option value="132">11 years</option>
-      <option value="144">12 years</option>
-    </select>
-  </div>
-
   <div class="email-signup">
     <form action="https://formsubmit.co/srinathsenthilkumar2001@gmail.com" method="POST">
       <input type="email" name="email" placeholder="Enter your email" class="email-input" required>
       <input type="hidden" name="_subject" value="New BabySteps Signup">
-      <input type="hidden" id="ageInput" name="child_age" value="">
       <button type="submit" class="cta-button">Sign Up To Know More</button>
     </form>
   </div>
 
   <p class="launching-soon">🚀 We're Launching Soon – Be the First to Know!</p>
-
-  <script>
-    document.getElementById('age').addEventListener('change', function() {
-      document.getElementById('ageInput').value = this.options[this.selectedIndex].text;
-    });
-  </script>
+  <p class="disclaimer">📧 We promise we will not spam you. Instead, you'll receive a personalized email from our CEO to better understand and serve you!</p>
 </div>
 </body>
-
 </html>
